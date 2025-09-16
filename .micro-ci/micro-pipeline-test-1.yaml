@@ -1,4 +1,4 @@
-name: Micro CI Pipeline Test Local
+name: Micro CI Pipeline Test 1
 
 variables:
   GO_ENV: development
@@ -30,10 +30,6 @@ jobs:
     variables:
       JOB_2_VAR: job2-tester
     steps:
-      - name: Display Message from Second Job
-        script: |
-          echo "This is the second job in the Micro CI Pipeline Test"
-
       - name: Show Local Variales and Environment Variables
         variables:
           TEST_VAR: tester

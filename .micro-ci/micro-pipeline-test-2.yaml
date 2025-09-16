@@ -1,0 +1,18 @@
+name: Micro CI Pipeline Test 2
+
+jobs:
+  - job: Second Pipeline Test Job
+    image: golang:1.21-alpine
+    steps:
+      - name: Display Message
+        script: |
+          echo "Running Micro CI Pipeline Test 2"
+
+      - name: Build Step Example
+        script: |
+          echo "building and running go program"
+          go run go-app/main.go
+
+      - name: Display Final Message
+        script: |
+          echo "This is the final message from the first job in Micro CI Pipeline Test 2"
